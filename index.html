@@ -1,4 +1,12 @@
-<a-scene loading-screen="dotsColor: red; backgroundColor: black" background="color: #000000" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui=""><div class="a-loader-title" style="display: none;"></div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>- i s o l a t i o n -</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+<!--Start--> 
+    <a-scene loading-screen="dotsColor: red; backgroundColor: black" background="color: #000000" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui=""><div class="a-loader-title" style="display: none;"></div>
 
       
 <!--Lights-->    
@@ -13,7 +21,8 @@
         
         <a-asset-item id="isolationnew" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fisolationnew.gltf?v=1601360724263"></a-asset-item> 
         <a-asset-item id="immunesystem" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960"></a-asset-item>
-        <a-asset-item id="trap" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597"></a-asset-item> 
+        <a-asset-item id="trap" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597"></a-asset-item>
+        <a-asset-item id="glow" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fglow.gltf?v=1601377814136"></a-asset-item>
         <img id="sky" src="sky.jpg"> 
         <audio id="whispers" src="whispers.mp3"></audio>
                
@@ -28,12 +37,12 @@
     
 <!--Isolation--> 
                                   
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fisolationnew.gltf?v=1601360724263" position="0 -0.36044 -4.17165" rotation="" scale="0.4281 0.5081 -0.51428" sound="src: whispers.mp3; autoplay: true">
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fisolationnew.gltf?v=1601360724263" position="0 -0.36044 -4.17165" rotation="" scale="0.4281 0.5081 -0.51428" >
       </a-entity>
       
 <!--TRAPS--> 
       
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="4.44413 0.01906 -1.53743" rotation="0 0 -1.6306378849423229" scale="0.4281 0.5081 -0.51428">
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="4.44413 0.01906 -1.53743" rotation="0 0 -1.6306378849423229" scale="0.4281 0.5081 -0.51428"  animation="property: rotation; to: 0 -360 0; dur: 5000; easing: linear; loop: true" shadow>
       </a-entity>
       
       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-3.83257 0.01906 0.02131" rotation="0 0 -14.118253029818614" scale="0.4281 0.5081 -0.51428">
@@ -63,6 +72,17 @@
        <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-3.83257 0.01906 0.02131" rotation="0 0 -14.118253029818614" scale="0.4281 0.5081 -0.51428">
       </a-entity>
       
+<!--Immune System--> 
+      
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960" position="4.44413 0.33261 -1.45967" rotation="0 0 -1.6306378849423229" scale="0.4281 0.5081 -0.51428" animation="property: rotation; to: 0 360 0; dur: 5000; easing: linear; loop: true" shadow>
+      </a-entity>
+      
+      <!--GLOW--> 
+      
+       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fglow.gltf?v=1601377814136" position="4.44413 0.33261 -1.45967" rotation="0 0 -1.6306378849423229" scale="0.4281 0.5081 -0.51428" animation="property: rotation; to: 0 360 0; dur: 5000; easing: linear; loop: true" shadow>
+      </a-entity>
+      
+      
       <div class="a-loader-title" style="display: none;">
         Isolation by Ranz Ocampo
       </div>
@@ -70,6 +90,8 @@
       <div class="a-loader-title" style="display: none;"></div><div class="a-loader-title" style="display: none;"></div>
                                                                                                                  
       <div class="a-loader-title" style="display: none;">- i s o l a t i o n -</div><div class="a-loader-title" style="display: none;">- i s o l a t i o n -</div><div class="a-loader-title" style="display: none;">- i s o l a t i o n -</div></a-scene>
+  </body>
+</html>
 
 
 
