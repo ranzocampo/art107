@@ -22,7 +22,8 @@
         <a-asset-item id="isolationnew" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fisolationnew.gltf?v=1601360724263"></a-asset-item> 
         <a-asset-item id="immunesystem" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960"></a-asset-item>  
         <img id="sky" src="sky.jpg"> 
-        
+        <audio id="whispers" src=whispers.mp3"> 
+               
       </a-assets>
       
 <!--Sky-->    
@@ -34,7 +35,10 @@
     
 <!--Isolation--> 
                                   
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fisolationnew.gltf?v=1601360724263" position="0 -0.10037 -4.17165" rotation="" scale="0.4281 0.5081 -0.51428"></a-entity>
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fisolationnew.gltf?v=1601360724263" position="0 -0.10037 -4.17165" rotation="" scale="0.4281 0.5081 -0.51428" 
+      sound="src: #whispers; 
+               on: click"> 
+      </a-entity>
   
       
       <div class="a-loader-title" style="display: none;">
