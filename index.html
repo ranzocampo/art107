@@ -4,23 +4,30 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene loading-screen="dotsColor: red; backgroundColor: black" background="color: #000000" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui=""><div class="a-loader-title" style="display: none;"></div>
-      
-<a-sky src="forest.jpg" rotation="0 -130 0" material="" geometry=""></a-sky>
-      
-      <a-entity light="type: spot; angle: 250"></a-entity>
-      
-      <a-entity light="type: ambient; color: #BBB"></a-entity>
-<a-entity light="type: directional; color: #200; intensity: 0.6" position="-0.5 1 1"></a-entity>
-      
-      <a-assets>
+	  
+	  <!--ASSETS MANAGEMENT-->
+	   <a-assets>
         
         <a-asset-item id="isolationnew" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fisolationnew.gltf?v=1601360724263"></a-asset-item>
         
         
         <a-asset-item id="immunesystem" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960"></a-asset-item>
         
+		  <img id="forest" src="forest.jpg">
+		  
       </a-assets>
+	  
+	  <!--SKY-->
+	  <a-sky src="#forest"> </a-sky>
+	  
+    <a-scene loading-screen="dotsColor: red; backgroundColor: black" background="color: #000000" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui=""><div class="a-loader-title" style="display: none;"></div>
+      
+      <a-entity light="type: spot; angle: 250"></a-entity>
+      
+      <a-entity light="type: ambient; color: #BBB"></a-entity>
+<a-entity light="type: directional; color: #200; intensity: 0.6" position="-0.5 1 1"></a-entity>
+      
+     
       
       
       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fisolationnew.gltf?v=1601360724263" position="0 0.48226 -4.17165" rotation="" scale="0.4281 0.5081 -0.51428"></a-entity>
@@ -38,5 +45,6 @@
       <div class="a-loader-title" style="display: none;"></div><div class="a-loader-title" style="display: none;"></div></a-scene>
   </body>
 </html>
+
 
 
