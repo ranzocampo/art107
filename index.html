@@ -33,8 +33,12 @@
       
    <a-sky src="#sky" rotation="0 64 0"> </a-sky>
       
-<!--Floor--> 
+      <!--AnimatedLights--> 
+     <a-mixin id="light" geometry="primitive: sphere; radius: 1.5" material="color: #FFF; shader: flat" light="color: #DDDDFF; distance: 300; intensity: 2; type: point"></a-mixin>
       
+     <a-entity animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true">
+<a-entity mixin="light" position="0 -0.71921 40.76152"></a-entity>
+</a-entity>
     
 <!--Isolation--> 
                                   
