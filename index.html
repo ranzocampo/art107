@@ -6,25 +6,25 @@
   </head>
   <body>
 <!--Start--> 
-    <a-scene loading-screen="dotsColor: red; backgroundColor: black" background="color: #000000" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui=""><div class="a-loader-title" style="display: none;"></div>
+  <a-scene loading-screen="dotsColor: red; backgroundColor: black" background="color: #000000" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui=""><div class="a-loader-title" style="display: none;"></div>
 
       
 <!--Lights-->    
       <a-entity light="type: spot; angle: 150; color: #eead7c; groundColor: #f0efcc; decay: 2.64; intensity: 0.86; penumbra: 0.85; castShadow: true; shadowBias: 0.04"></a-entity>
+      <a-entity light="color: #200" position="-0.1924 0.81557 -1.22709"></a-entity>
+      <a-light type="directional" color"blue"="" position="-1 0 0" light=""></a-light>
       
-      <a-entity light="color: #200; intensity: 0.6" position="-0.59104 0.81557 -1.22709"></a-entity>
-  
-      
-<!--Assets--> 
-      
+<!--Assets-->   
       <a-assets>
         
         <a-asset-item id="isolationnew" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fisolationnew.gltf?v=1601360724263"></a-asset-item> 
         <a-asset-item id="immunesystem" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960"></a-asset-item>
         <a-asset-item id="trap" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597"></a-asset-item>
         <a-asset-item id="glow" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fglow.gltf?v=1601377814136"></a-asset-item>
+        <a-asset-item id="tcell" src="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftcell.gltf?v=1601446337262"></a-asset-item>
         <img id="sky" src="sky.jpg"> 
         <audio id="whispers" src="whispers.mp3"></audio>
+        
                
       </a-assets>
       
@@ -37,82 +37,100 @@
     
 <!--Isolation--> 
                                   
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fisolationnew.gltf?v=1601360724263" position="0 -0.36044 -4.17165" rotation="" scale="0.4281 0.5081 -0.51428" >
-      </a-entity>
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fisolationnew.gltf?v=1601360724263" position="0 -0.36044 -4.17165" rotation="" scale="0.4281 0.5081 -0.51428">
+      </a-entity> 
+      <a-light type="ambient" color="red" instensity="1" light=""></a-light>
       
 <!--TRAPS--> 
       
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="4.44413 0.01906 -1.53743" rotation="0 0 -1.6306378849423229" scale="0.4281 0.5081 -0.51428"  animation="property: rotation; to: 0 -360 0; dur: 5000; easing: linear; loop: true" shadow>
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="4.44413 0.01906 -1.53743" rotation="0 -330.5964980989861 -0.1331846226382413" scale="0.4281 0.5081 -0.51428" animation="property: rotation; to: 0 -360 0; dur: 5000; easing: linear; loop: true" shadow="">
       </a-entity>
       
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-3.83257 0.01906 0.02131" rotation="0 0 -14.118253029818614" scale="0.4281 0.5081 -0.51428">
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-2.39419 0.01906 -11.87463" rotation="-1.1430424834334492 -329.69770162697307 1.0838672112013568" scale="0.4281 0.5081 -0.51428" animation="property: rotation; to: 0 -360 0; dur: 5000; easing: linear; loop: true" shadow="">
       </a-entity>
       
-       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-3.83257 0.01906 0.02131" rotation="0 0 -14.118253029818614" scale="0.4281 0.5081 -0.51428">
+       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-5.02979 0.01906 -3.86129" rotation="0 -329.69770162697307 -0.38244491344784" scale="0.4281 0.5081 -0.51428" animation="property: rotation; to: 0 -360 0; dur: 5000; easing: linear; loop: true" shadow="">
       </a-entity>
       
-       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-3.83257 0.01906 0.02131" rotation="0 0 -14.118253029818614" scale="0.4281 0.5081 -0.51428">
+       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-4.52288 0.01906 -7.52199" rotation="0.002748973526674261 -329.6965441644355 0.018422945389290655" scale="0.4281 0.5081 -0.51428" animation="property: rotation; to: 0 -360 0; dur: 5000; easing: linear; loop: true" shadow="">
       </a-entity>
       
-       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-3.83257 0.01906 0.02131" rotation="0 0 -14.118253029818614" scale="0.4281 0.5081 -0.51428">
+       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="3.60268 0.01906 -10.59664" rotation="0 -329.69770162697307 0.17849036881090224" scale="0.4281 0.5081 -0.51428" animation="property: rotation; to: 0 -360 0; dur: 5000; easing: linear; loop: true" shadow="">
       </a-entity>
       
-       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-3.83257 0.01906 0.02131" rotation="0 0 -14.118253029818614" scale="0.4281 0.5081 -0.51428">
+       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="4.84962 0.01906 -6.83372" rotation="0 -329.69770162697307 1.651023854599413" scale="0.4281 0.5081 -0.51428" animation="property: rotation; to: 0 -360 0; dur: 5000; easing: linear; loop: true" shadow="">
       </a-entity>
       
-       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-3.83257 0.01906 0.02131" rotation="0 0 -14.118253029818614" scale="0.4281 0.5081 -0.51428">
+       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-6.5126 0.01906 -11.96561" rotation="0 -329.69770162697307 0.16874839245321452" scale="0.4281 0.5081 -0.51428" animation="property: rotation; to: 0 -360 0; dur: 5000; easing: linear; loop: true" shadow="">
       </a-entity>
       
-       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-3.83257 0.01906 0.02131" rotation="0 0 -14.118253029818614" scale="0.4281 0.5081 -0.51428">
+       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="7.93125 0.01906 -9.72222" rotation="0 -329.69770162697307 1.4401245347371958" scale="0.4281 0.5081 -0.51428" animation="property: rotation; to: 0 -360 0; dur: 5000; easing: linear; loop: true" shadow="">
       </a-entity>
       
-       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-3.83257 0.01906 0.02131" rotation="0 0 -14.118253029818614" scale="0.4281 0.5081 -0.51428">
+       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-9.28135 0.2259 -8.58129" rotation="0 -329.69770162697307 -1.449191324614645" scale="0.4281 0.5081 -0.51428" animation="property: rotation; to: 0 -360 0; dur: 5000; easing: linear; loop: true" shadow="">
       </a-entity>
       
-       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-3.83257 0.01906 0.02131" rotation="0 0 -14.118253029818614" scale="0.4281 0.5081 -0.51428">
+       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftrap.gltf?v=1601375809597" position="-3.83257 0.01906 0.32214" rotation="-0.00014468281719338212 -329.69808744781886 -1.2028929421457786" scale="0.4281 0.5081 -0.51428" animation="property: rotation; to: 0 -360 0; dur: 5000; easing: linear; loop: true" shadow="">
       </a-entity>
       
 <!--Immune System--> 
       
       <!--immune1--> 
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960" position="4.44413 3.3517 -1.45967" rotation="0 299.33387693926085 -0.27479021832059547" scale="1.3481 1.0981 -1.49428" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow>
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960" position="4.44413 3.3517 -1.45967" rotation="0 360 0" scale="1.3481 1.0981 -1.49428" animation="property: rotation; to: 0 360 0; dur: 400; easing: linear; loop: true" shadow="">
+      </a-entity><a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960" position="-3.81297 -3.1813 7.99847" rotation="0 360 0" scale="3.65544 3.31979 -3.35654" animation="property: rotation; to: 0 360 0; dur: 400; easing: linear; loop: true" shadow="">
+      </a-entity><a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960" position="2.33157 6.04677 -18.31043" rotation="0 360 0" scale="2.3281 -2.3119 -1.49428" animation="property: rotation; to: 0 360 0; dur: 400; easing: linear; loop: true" shadow="">
       </a-entity>
       
       <!--immune2--> 
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960" position="-5.58396 4.92509 -14.61736" rotation="0 312.83096699696307 -0.2136544783634634" scale="3.7481 2.9581 -3.05428" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow="">
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960" position="-5.58396 4.92509 -14.61736" rotation="0 358.2418330379017 -0.007963704601253964" scale="3.7481 2.9581 -3.05428" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow="">
       </a-entity>
       
        <!--immune3--> 
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960" position="-10.58396 8.92509 -5.61736" rotation="0 312.83096699696307 -0.2136544783634634" scale="5.7481 4.9581 -5.05428" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow="">
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960" position="11.24674 2.83746 -1.30366" rotation="0 360 0" scale="5.7481 5.0181 -5.05428" animation="property: rotation; to: 0 360 0; dur: 400; easing: linear; loop: true" shadow="">
+      </a-entity><a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960" position="-10.58396 8.92509 -5.61736" rotation="0 359.83776336922676 -0.0007348588790673191" scale="5.7481 4.9581 -5.05428" animation="property: rotation; to: 0 360 0; dur: 400; easing: linear; loop: true" shadow="">
       </a-entity>
       
        <!--immune4--> 
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960" position="-8.58396 6.92509 8.61736" rotation="0 312.83096699696307 -0.2136544783634634" scale="2.7481 1.9581 -2.05428" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow="">
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960" position="-8.57505 6.92509 8.62488" rotation="0 358.2418330379017 -0.007963704601253964" scale="2.7481 1.9581 -2.05428" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow="">
+      </a-entity><a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fimmunesystem.gltf?v=1601358055960" position="8.67236 -0.03274 8.7056" rotation="0 360 0" scale="3 3 -3" animation="property: rotation; to: 0 360 0; dur: 400; easing: linear; loop: NaN" shadow="">
       </a-entity>
       
       
       <!--GLOW--> 
       
-       <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fglow.gltf?v=1601377814136" position="4.44413 0.33261 -1.45967" rotation="0 0 -1.6306378849423229" scale="0.4281 0.5081 -0.51428" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow>
-      </a-entity>
-      
        <!--immune1--> 
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fglow.gltf?v=1601377814136" position="4.44413 3.3517 -1.45967" rotation="0 299.33387693926085 -0.27479021832059547" scale="1.3481 1.0981 -1.49428" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow>
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fglow.gltf?v=1601377814136" position="4.44413 3.3517 -1.45967" rotation="0 357.73874581492663 -0.010242463171291674" scale="1.3481 1.0981 -1.49428" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow="">
+      </a-entity><a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fglow.gltf?v=1601377814136" position="1.44982 8.60339 9.8746" rotation="4 358.93 0" scale="2.1781 -2.0219 -2" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: NaN" shadow="">
       </a-entity>
       
          <!--immune2--> 
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fglow.gltf?v=1601377814136" position="-5.58396 4.92509 -14.61736" rotation="0 312.83096699696307 -0.2136544783634634" scale="3.7481 2.9581 -3.05428"  animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow>
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fglow.gltf?v=1601377814136" position="-5.58396 4.92509 -14.61736" rotation="0 358.2418330379017 -0.007963704601253964" scale="3.7481 2.9581 -3.05428" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow="">
       </a-entity>
       
          <!--immune3--> 
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fglow.gltf?v=1601377814136" position="-10.58396 8.92509 -5.61736" rotation="0 312.83096699696307 -0.2136544783634634" scale="5.7481 4.9581 -5.05428"  animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow>
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fglow.gltf?v=1601377814136" position="11.21563 2.90702 -1.24635" rotation="0 360 0" scale="5.7481 4.9581 -5.05428" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: NaN" shadow="">
       </a-entity>
       
       <!--immune4--> 
-      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fglow.gltf?v=1601377814136" position="-8.58396 6.92509 8.61736" rotation="0 312.83096699696307 -0.2136544783634634" scale="2.7481 1.9581 -2.05428"  animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow>
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Fglow.gltf?v=1601377814136" position="-8.58396 6.92509 8.61736" rotation="0 358.2418330379017 -0.007963704601253964" scale="2.7481 1.9581 -2.05428" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow="">
       </a-entity>
       
+      <!--T-cell--> 
       
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftcell.gltf?v=1601446337262" position="4.46096 1.1184 -1.47096" rotation="0 360 0" scale="4.47669 3.565 -3.94748" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" shadow="">
+      </a-entity>
+      
+      <a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftcell.gltf?v=1601446337262" position="-3.8374 1.43791 0.56822" rotation="0 360 0" scale="4.47669 3.565 -3.94748" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" shadow="">
+      </a-entity><a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftcell.gltf?v=1601446337262" position="4.25355 1.8438 -6.76061" rotation="0 360 0" scale="5.63485 4.4873 -4.96873" animation="property: rotation; to: 0 360 0; dur: 5000; easing: linear; loop: true" shadow="">
+      </a-entity><a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftcell.gltf?v=1601446337262" position="8.09745 1.02949 -9.675" rotation="0 360 0" scale="4.47669 3.565 -3.94748" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" shadow="">
+      </a-entity><a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftcell.gltf?v=1601446337262" position="3.55117 2.6584 -9.00357" rotation="0 360 0" scale="5.31071 4.22917 -4.6829" animation="property: rotation; to: 0 360 0; dur: 5000; easing: linear; loop: true" shadow="">
+      </a-entity><a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftcell.gltf?v=1601446337262" position="-5.93893 2.03493 -10.1164" rotation="0 360 0" scale="5.05669 3.965 -3.99748" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" shadow="">
+      </a-entity><a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftcell.gltf?v=1601446337262" position="-2.39969 1.02949 -12.06664" rotation="0 360 0" scale="4.9193 3.91747 -4.33776" animation="property: rotation; to: 0 360 0; dur: 5000; easing: linear; loop: true" shadow="">
+      </a-entity><a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftcell.gltf?v=1601446337262" position="-9.5171 1.38982 -8.99386" rotation="0 360 0" scale="5.29754 4.21868 -3.69739" animation="property: rotation; to: 0 360 0; dur: 3000; easing: linear; loop: true" shadow="">
+      </a-entity><a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftcell.gltf?v=1601446337262" position="-4.49787 1.20937 -7.42624" rotation="0 360 0" scale="5.4381 3.565 -3.94748" animation="property: rotation; to: 0 360 0; dur: 4000; easing: linear; loop: true" shadow="">
+      </a-entity><a-entity gltf-model="https://cdn.glitch.com/23053707-786a-402e-81b9-1d4baa5f8b92%2Ftcell.gltf?v=1601446337262" position="-5.20765 1.2483 -3.90703" rotation="0 360 0" scale="5.17435 5.38146 -1.41379" animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" shadow="">
+      </a-entity>
+      <a-light type="ambient" color="red" instensity="1" light=""></a-light>
       
       <div class="a-loader-title" style="display: none;">
         Isolation by Ranz Ocampo
@@ -120,7 +138,7 @@
       <div class="isolation" style="display: none;"></div>
       <div class="a-loader-title" style="display: none;"></div><div class="a-loader-title" style="display: none;"></div>
                                                                                                                  
-      <div class="a-loader-title" style="display: none;">- i s o l a t i o n -</div><div class="a-loader-title" style="display: none;">- i s o l a t i o n -</div><div class="a-loader-title" style="display: none;">- i s o l a t i o n -</div></a-scene>
+      <div class="a-loader-title" style="display: none;">- i s o l a t i o n -</div><div class="a-loader-title" style="display: none;">- i s o l a t i o n -</div><div class="a-loader-title" style="display: none;">- i s o l a t i o n -</div><div class="a-loader-title" style="display: none;">- i s o l a t i o n -</div><div class="a-loader-title" style="display: none;">- i s o l a t i o n -</div><div class="a-loader-title" style="display: none;">- i s o l a t i o n -</div></a-scene>
   </body>
 </html>
 
