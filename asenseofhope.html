@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>a sense of hope</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+<!--Start--> 
+ <a-scene loading-screen="dotsColor: red; backgroundColor: black" background="color: #000000" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui=""><div class="a-loader-title" style="display: none;"></div>
+    
+<!--Lights-->    
+      <a-entity light="type: spot; angle: 200; color: #eead7c; groundColor: #f0efcc; decay: 2.64; intensity: 0.86; penumbra: 0.85; castShadow: true; shadowBias: 0.04" visible=""></a-entity>
+      
+      <a-entity light="color: #200" position="-0.1924 0.81557 -1.22709" visible=""></a-entity>
+      
+      <a-entity mixin="light" position="3.23026 -22.70276 40.76152" light="decay: 5" visible="" geometry="primitive: circle; radius: 7" material="color: #ffffff"></a-entity>
+<!--Assets-->   
+      <a-assets>
+        
+        <a-asset-item id="tv" src="https://cdn.glitch.com/3cc0c9fe-6520-4bb9-905c-cf85a9981c52%2Ftv.gltf?v=1604284683739"></a-asset-item>     
+        <a-asset-item id="shadow" src="https://cdn.glitch.com/3cc0c9fe-6520-4bb9-905c-cf85a9981c52%2Fshadow.jpg?v=1604286455856"></a-asset-item>         
+        <a-asset-item id="shadowfigure" src="https://cdn.glitch.com/3cc0c9fe-6520-4bb9-905c-cf85a9981c52%2Fshadow.gltf?v=1604295253830"></a-asset-item>  
+       
+       
+        
+   <audio id="breath" src="https://cdn.glitch.com/3cc0c9fe-6520-4bb9-905c-cf85a9981c52%2Fbreath.mp3?v=1604296779648" crossorigin="anonymous"></audio><video id="shadows" autoplay="" loop="true" src="https://cdn.glitch.com/3cc0c9fe-6520-4bb9-905c-cf85a9981c52%2Fshadows_1.mp4?v=1604308189893" crossorigin="anonymous" playsinline="" webkit-playsinline=""></video></a-assets>
+   
+   <!--breathingsound-->
+      
+<!--Sky-->    
+      
+   <a-sky src="#shadow" sound="src: https://cdn.glitch.com/3cc0c9fe-6520-4bb9-905c-cf85a9981c52%2Fbreath.mp3?v=1604296779648; autoplay: true; loop: true; positional: false" material="" geometry=""> 
+   </a-sky>
+   
+   
+      <!--AnimatedLights--> 
+     <a-mixin id="light" geometry="primitive: sphere; radius: 3" material="color: #FFF; shader: flat" light="color: #DDDDFF; castShadow: true; distance: 500; intensity: 2; type: point"></a-mixin>
+         
+   <a-entity animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: NaN">
+   
+     <a-entity mixin="light" position="0 -0.71921 40.76152" light="decay: 5"></a-entity>
+     </a-entity>
+    
+   
+  <a-plane color="#010101" height="1000" width="1000" material="" position="0 0 -4.534" geometry=""> 
+   
+   </a-plane>
+   
+   
+
+
+   <!--text-->
+   <a-entity text="value: follow the light" position="0.4 1 -2.534" width="7" shadow=""></a-entity>
+   
+   <!--video--> 
+    <a-video src="#shadows" width="16" height="9" position="0.02421 0.30822 -6.40747" material="" geometry="" rotation="-90 0 -90" scale="0.067 0.13917 -0.736"></a-video>
+   
+   
+   <!--television--> 
+                                  
+      <a-entity gltf-model="https://cdn.glitch.com/3cc0c9fe-6520-4bb9-905c-cf85a9981c52%2Ftv.gltf?v=1604284683739" position="0.2225 -1.05493 -6.39599" rotation="0.002291831180523293 -0.0005729577951308233 0.41424848587958524" scale="0.063 0.075 -0.075">
+        
+   </a-entity>
+        
+   
+    
+   <!--shadow figure--> 
+                                  
+      <a-entity gltf-model="https://cdn.glitch.com/3cc0c9fe-6520-4bb9-905c-cf85a9981c52%2Fshadow.gltf?v=1604295253830" position="-4.94088 3.50805 -5.16352" rotation="-0.24500000000000002 250.00000000000003 -0.041252961249419275" scale="0.42982 0.58987 -0.46583" shadow="">
+      </a-entity>
+   
+    <a-entity gltf-model="https://cdn.glitch.com/3cc0c9fe-6520-4bb9-905c-cf85a9981c52%2Fshadow.gltf?v=1604295253830" position="4.10227 3.50805 -10.06283" rotation="-0.24500000000000002 135 -0.041252961249419275" scale="0.42982 0.59 -0.46583" shadow="">
+      </a-entity>
+   
+    <a-entity gltf-model="https://cdn.glitch.com/3cc0c9fe-6520-4bb9-905c-cf85a9981c52%2Fshadow.gltf?v=1604295253830" position="-0.40863 3.50805 -12.98807" rotation="-0.24500000000000002 180 -0.041252961249419275" scale="0.42982 0.59 -0.46583" shadow="">
+      </a-entity>
+   
+   
+    <a-entity gltf-model="https://cdn.glitch.com/3cc0c9fe-6520-4bb9-905c-cf85a9981c52%2Fshadow.gltf?v=1604295253830" position="-4.73839 3.53826 -10.22512" rotation="-0.24500000000000002 230 -0.041252961249419275" scale="0.42982 0.58987 -0.46583" shadow="">
+      </a-entity>
+   
+   
+    <a-entity gltf-model="https://cdn.glitch.com/3cc0c9fe-6520-4bb9-905c-cf85a9981c52%2Fshadow.gltf?v=1604295253830" position="4.97872 3.50805 -5.42584" rotation="-0.24500000000000002 100 -0.041252961249419275" scale="0.42982 0.58987 -0.46583" shadow="">
+      </a-entity>
+   
+   
+   
+      <div class="a-loader-title" style="display: none;">
+        a sense of hope by Ranz Ocampo
+      </div>
+                                                                                                                                                                                                                      
+    <div class="a-loader-title" style="display: none;">a sense of hope</div><div class="a-loader-title" style="display: none;">a sense of hope</div><div class="a-loader-title" style="display: none;">a sense of hope</div><div class="a-loader-title" style="display: none;">a sense of hope</div><div class="a-loader-title" style="display: none;">a sense of hope</div><div class="a-loader-title" style="display: none;">a sense of hope</div><div class="a-loader-title" style="display: none;">a sense of hope</div><div class="a-loader-title" style="display: none;">a sense of hope</div></a-scene>
+  </body>
+</html>
